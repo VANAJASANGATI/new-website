@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Form,Card,Button } from 'react-bootstrap';
 import "./Userform.css"
-const UserForm =()=>{
+const UserForm =(props)=>{
 
     const [data, setData]=useState({username: '',
     email: '',
@@ -15,7 +15,8 @@ const UserForm =()=>{
       
     const onSubmitHandler=(e)=>{
       e.preventDefault()
-      console.log(data)
+      console.log(data);
+      props.setShowForm(false);
     }
       return (
         
