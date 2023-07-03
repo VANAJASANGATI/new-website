@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{margin: 0;}
+
+.service-img{
+    width: 10px;
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-card{
+    width:400px;
+    margin: 20px;
+    height: 300px;
+    padding:13px;
+    box-shadow: 2px 2px 8px #888888;
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+.service-img{
+    width:50px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+.know-more-btn{
+    border-radius: 6px;
+    border: 1px solid black;
+    color: black;
+    font-size: 14px;
+    padding: 4px;
+    width:100px;
+    
+}
+.know-more-btn:hover{
+    background-color: chocolate;
+
+}
