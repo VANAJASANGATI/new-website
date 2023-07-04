@@ -22,7 +22,6 @@ const Services=()=>{
         <ul className="services-container">{servicesList.map(eachService=><l1><ServiceItem key={eachService.id}
          serviceDetails={eachService}> 
         </ServiceItem></l1>
-       
         )}</ul>
     </div>) 
 }

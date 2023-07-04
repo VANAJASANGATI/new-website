@@ -14,6 +14,7 @@ const UserForm =(props)=>{
       }
       
     const onSubmitHandler=(e)=>{
+      alert("Details submitted Successfully")
       e.preventDefault()
       console.log(data);
       props.setShowForm(false);
