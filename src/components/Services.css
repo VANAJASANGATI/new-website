@@ -9,6 +9,10 @@ body{margin: 0;}
 .services-container{
     display: flex;
     flex-wrap: wrap;
+    padding:0px;
+}
+.services-container li {
+    list-style-type: none;
 }
 .service-card{
     width:400px;
