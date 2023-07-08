@@ -1,0 +1,12 @@
+.accordion-body {
+  background-color: black;
+  color: white;
+  }
+  
+.accordion .item .accordion-header button{
+  background-color: black;
+    color: white;
+}
+.accordion-header{
+  background-color: black;
+}

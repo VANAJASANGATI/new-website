@@ -5,7 +5,7 @@ import "./Services.css"
 const ServiceItem=(props)=>{
   const {serviceDetails}=props
   const {serviceImg,serviceName,description}=serviceDetails
-  console.log(props)
+  // console.log(props)
     return(<>
     {/* <Card style={{ width: '18rem' }}>
     <Card.Img variant="top" src={serviceImg} className='service-img'/>
