@@ -6,11 +6,18 @@ import NavHeader from './components/NavHeader';
 import Accordions from "./components/Accordians"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
   let [showForm, setShowForm] = useState(false);
   let [showServices,setShowServices] = useState(false);
+  /* useEffect(() => {
+  let [message, setMessage] = useState("");
+    fetch("http://localhost:8080/getMessage")
+      .then((res) => res.json())
+      .then((data) =>{setMessage(data.message); });
+  }, []); */
+  
   return (
     <>
     {/* <Header setShowForm={setShowForm} />
