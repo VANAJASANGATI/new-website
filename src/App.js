@@ -6,7 +6,7 @@ import NavHeader from './components/NavHeader';
 import Accordions from "./components/Accordians"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
   let [showForm, setShowForm] = useState(false);
