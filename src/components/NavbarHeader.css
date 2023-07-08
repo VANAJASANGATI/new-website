@@ -30,7 +30,6 @@
   .navbar-nav .nav-item{
     text-align: center;
   }
-  .request-demo-btn {
-    text-align: center;
+  #request-demo {
     margin: auto;
   }
