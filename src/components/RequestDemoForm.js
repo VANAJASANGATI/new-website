@@ -11,8 +11,9 @@ import "./RequestDemoForm.css"
 const RequestDemoForm=()=> {
   
   return (
-    <div className="form-container m-auto mt-5">
-    <form>
+    <div className="form-container main-form-demo mt-5" id="request-demo">
+    <form class="float-right" >
+    <h3 className="submit-form">Request Form</h3>
     <MDBInput wrapperClass='mb-4' type='email' id='form6Example5' label='Email' />
       <MDBRow className='mb-4'>
         <MDBCol>

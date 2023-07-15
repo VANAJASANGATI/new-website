@@ -17,15 +17,12 @@ const ServiceItem=(props)=>{
       <Button variant="primary">Go somewhere</Button>
     </Card.Body>
   </Card> */}
-  <div className="services-container">
+ 
     <div className="service-card">
     <div ><img className="service-img" src={serviceImg} alt="service"/></div>
     <div><h1 className="heading">{serviceName}</h1><p>{description}</p>
     <button className="know-more-btn" type="submit">KNOW MORE</button></div>
     </div>
-   
-  </div>
-
   </>)
   
 

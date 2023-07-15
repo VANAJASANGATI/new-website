@@ -6,12 +6,12 @@
   }
   
   .request-demo-btn{
+    height: 39px;
+    text-align: center;
     color:white;
     border-radius: 25px;
     width:150px;
-    padding: 6px;
-    padding-bottom: 10px;
-    margin-top:5px;
+    padding: 3px;
     border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.808);
   }
@@ -24,7 +24,7 @@
   }
   
   .logo {
-    width:40px;
+    width:200px;
     height:40px;  
   }
  
