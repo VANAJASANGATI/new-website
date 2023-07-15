@@ -1,17 +1,26 @@
 
 .form-container{
-    width:30%;
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
+  }
+ 
+  .main-form-demo  {
+    background-image: url('../images/background.png');
+  }
+  .submit-form {
+    text-align: center;
   }
   @media screen and (max-width:562px){
     .form-container{
       width:80%;
-    
+      margin:0 auto;
     }
   }
+  h3 {
+    text-align: center;
+  }
   .messgae-container {
-    height:120px;
+    height: 75px;
   }
   .form-request-demo-btn{
     text-transform: none;

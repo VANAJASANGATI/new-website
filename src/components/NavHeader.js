@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './NavbarHeader.css';
-import imgLogo from "./../images/logo.jpeg";
+import imgLogo from "./../images/Olink.png";
 // import Accordion from 'react-bootstrap/Accordion';
 import Services from "./Services";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -49,9 +49,7 @@ const NavHeader=(props)=>{
         <NavDropdown title="Careers" id="basic-nav-careers-dropdown" className="careers-nav-link">
           <NavDropdown.Item href="#action/3.1">What we do</NavDropdown.Item>
         </NavDropdown>
-        <Nav.Link href="#pricing">
-           <button className="request-demo-btn">Request Demo</button>
-        </Nav.Link>
+        <button className="request-demo-btn"><a href="#request-demo">Request Demo</a></button>
           
       </Nav>
       </div>

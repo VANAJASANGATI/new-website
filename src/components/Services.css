@@ -10,12 +10,29 @@ body{margin: 0;}
     display: flex;
     flex-wrap: wrap;
     padding:0px;
+    justify-content: space-between;
 }
+.services-container::after {
+    content: '';
+    flex: auto;
+    }
 .services-container li {
     list-style-type: none;
+     width: 33%;
 }
+@media all and (max-width: 800px) {
+    .services-container li {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      width: 45%;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .services-container li {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      width: 100%;
+    }
+  }
 .service-card{
-    width: 349px;
     margin: 20px;
     height: 300px;
     padding:13px;

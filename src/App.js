@@ -4,10 +4,8 @@ import UserForm from './components/UserForm';
 import Services from './components/Services';
 import NavHeader from './components/NavHeader';
 import Accordions from "./components/Accordians"
-import RequestDemoForm from "./components/RequestDemoForm"
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-
+import RequestDemoForm from "./components/RequestDemoForm";
 import './App.css';
 import { useState } from 'react';
 
@@ -29,8 +27,7 @@ function App() {
     <NavHeader setShowForm={setShowForm}/>
     {showForm && <UserForm setShowForm={setShowForm}/>}
    {showServices && <Services setShowServices={setShowServices}/>}
-   <Accordions/>
-   <RequestDemoForm/>
+   {<Accordions/> &&  ''}<RequestDemoForm/>
     </>
   );
 }
