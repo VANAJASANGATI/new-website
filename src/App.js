@@ -3,11 +3,14 @@
 import UserForm from './components/UserForm';
 import Services from './components/Services';
 import NavHeader from './components/NavHeader';
-import Accordions from "./components/Accordians"
+import Accordions  from './components/Accordians';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RequestDemoForm from "./components/RequestDemoForm";
+
 import './App.css';
 import { useState } from 'react';
+
+
 
 function App() {
   let [showForm, setShowForm] = useState(false);
@@ -27,7 +30,8 @@ function App() {
     <NavHeader setShowForm={setShowForm}/>
     {showForm && <UserForm setShowForm={setShowForm}/>}
    {showServices && <Services setShowServices={setShowServices}/>}
-   {<Accordions/> &&  ''}<RequestDemoForm/>
+   <RequestDemoForm/>
+   <Accordions/>
     </>
   );
 }

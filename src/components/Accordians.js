@@ -1,80 +1,28 @@
-import Accordion from 'react-bootstrap/Accordion';
+// import Accordion from 'react-bootstrap/Accordion';
+import AccordianItem from "./AccordianItem"
 import "./Accordion.css"
-const Accordions = () =>{
-return(<><Accordion className='accordian-container' >
-<Accordion.Item eventKey="0" >
-  <Accordion.Header >Accordion Item #1</Accordion.Header>
-  <Accordion.Body>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
-  </Accordion.Body>
-</Accordion.Item>
-<Accordion.Item eventKey="1">
-  <Accordion.Header>Accordion Item #2</Accordion.Header>
-  <Accordion.Body>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
-  </Accordion.Body>
-</Accordion.Item>
-<Accordion.Item eventKey="3" >
-  <Accordion.Header >Accordion Item #3</Accordion.Header>
-  <Accordion.Body>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
-  </Accordion.Body>
-</Accordion.Item>
-<Accordion.Item eventKey="4" >
-  <Accordion.Header >Accordion Item #4</Accordion.Header>
-  <Accordion.Body>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
-  </Accordion.Body>
-</Accordion.Item>
-<Accordion.Item eventKey="5" >
-  <Accordion.Header >Accordion Item #5</Accordion.Header>
-  <Accordion.Body>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
-  </Accordion.Body>
-</Accordion.Item>
-<Accordion.Item eventKey="6" >
-  <Accordion.Header >Accordion Item #6</Accordion.Header>
-  <Accordion.Body>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
-  </Accordion.Body>
-</Accordion.Item>
 
-</Accordion></>)
+const data=[{solution: 'AI/ML Forecasting & Demand Planning',
+description: "Leading Indicator Driven, Greater Accuracy, Less Bias, Explainability, Greater Productivity and Improved Collaboration across Sales, Supply Chain and Finance around Forecasts and Gaps.", },
+{ solution:"Supply Chain Planning, Control Tower, and Analytics",
+  description:"Respond to Demand changes and supply disruptions in real time with advanced Demand/Supply Matching capabilities, analytics and scenario evaluation all aided by the most advanced supply chain digital twin in the market. ",
+},
+{solution:"Digital IBP",
+description:"Bring Financial, Commercial and Supply Chain plans and forecasts together, evaluate revenue gap closure proposals, supply chain feasibility and cost scenarios, and make P&L optimal decisions – Run all IBP meetings on the system for better alignment, greater accountability.",},
+{solution:"Revenue Analytics, Planning, and Gap Closure",
+description:"Create and manage revenue plans across products, markets and channels and close gaps to plan by aligning Innovation, Pricing, Marketing, Promotions and Distribution initiatives and resources to market needs.",},
+{solution:"Market &amp; Supply Chain Data Knowledge Foundation",
+description:"Leading Indicators of Demand, External and Internal Data, Connecting the Dots, Creating an outside in view of Market, Customer, Competitor and Channel Intelligence to aid internal planning processes.",},
+
+]
+
+const Accordions = () =>{
+return(<>
+
+<div  className="accordian-container">
+{data.map(eachAccordian=><AccordianItem key={eachAccordian.solution} solution={eachAccordian.solution} description={eachAccordian.description}></AccordianItem>)}
+</div>
+
+</>)
 }
 export default Accordions
