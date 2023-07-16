@@ -2,7 +2,8 @@
 import AccordianItem from "./AccordianItem"
 import "./Accordion.css"
 
-const data=[{solution: 'AI/ML Forecasting & Demand Planning',
+const data=[
+{solution: 'AI/ML Forecasting & Demand Planning',
 description: "Leading Indicator Driven, Greater Accuracy, Less Bias, Explainability, Greater Productivity and Improved Collaboration across Sales, Supply Chain and Finance around Forecasts and Gaps.", },
 { solution:"Supply Chain Planning, Control Tower, and Analytics",
   description:"Respond to Demand changes and supply disruptions in real time with advanced Demand/Supply Matching capabilities, analytics and scenario evaluation all aided by the most advanced supply chain digital twin in the market. ",

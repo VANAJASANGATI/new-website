@@ -13,12 +13,9 @@ body{
   }
   .accordian-container{
     background-color: #1a191a;
-   
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
-    
   }
   .accordian{
     width: 60%;

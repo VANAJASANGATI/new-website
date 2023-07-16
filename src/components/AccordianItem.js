@@ -1,5 +1,4 @@
 import Accordion from 'react-bootstrap/Accordion';
-
 import "./Accordion.css"
 const AccordianItem=(props)=>{
     const {solution,description}=props
@@ -11,7 +10,6 @@ const AccordianItem=(props)=>{
         {description}
       </Accordion.Body>
     </Accordion.Item>
-    
     </Accordion></>)
 }
 export default AccordianItem
