@@ -8,12 +8,14 @@ import imgLogo from "./../images/Olink.png";
 // import Accordion from 'react-bootstrap/Accordion';
 import Services from "./Services";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate, Outlet, Link } from 'react-router-dom';
 
 
 const NavHeader=(props)=>{
+  let navigate = useNavigate();
   return(<><Navbar expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark" sticky="top">
   <Container >
-    <Navbar.Brand href="#home">  <img className="logo" src={imgLogo} alt="logo"/></Navbar.Brand>
+    <Navbar.Brand href="#home" onClick={(event)=> { event.preventDefault(); navigate("/");} }>  <img className="logo" src={imgLogo} alt="logo"/></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
    <div className="ms-auto">
@@ -40,7 +42,7 @@ const NavHeader=(props)=>{
           <NavDropdown.Item href="#action/3.1">Services</NavDropdown.Item>
         </NavDropdown>
         <NavDropdown title="Contact us" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1" onClick={()=> { props.setShowForm(true);}}>Contact</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1"><a onClick={(event)=> { event.preventDefault(); navigate("contact");} }>Contact</a></NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">
             Another action
           </NavDropdown.Item>
@@ -49,14 +51,13 @@ const NavHeader=(props)=>{
         <NavDropdown title="Careers" id="basic-nav-careers-dropdown" className="careers-nav-link">
           <NavDropdown.Item href="#action/3.1">What we do</NavDropdown.Item>
         </NavDropdown>
-        <button className="request-demo-btn"><a href="#request-demo">Request Demo</a></button>
-          
+        <button className="request-demo-btn"><a onClick={(event)=> { event.preventDefault(); navigate("demo");} }>Request Demo</a></button>
       </Nav>
       </div>
     </Navbar.Collapse>
   </Container>
 </Navbar>
-<div><Services/></div>
+<div></div>
 </>)
 }
 

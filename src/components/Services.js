@@ -17,12 +17,12 @@ serviceName:"Enterprise Security Services",
 description: "Tech Mahindra’s comprehensive value-chain advanced security outsourcing services covers the entire lifecycle - Assess, Prevent, Detect, and Respond & Recover.",}]
 
 
-const Services=()=>{
-    return(<div >
+const Services1=()=>{
+    return(<div > hi
         <ul className="services-container">{servicesList.map(eachService=><li  key={eachService.id}><ServiceItem key={eachService.id}
          serviceDetails={eachService}> 
         </ServiceItem></li>
         )}</ul>
     </div>) 
 }
-export default Services
+export default Services1

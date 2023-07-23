@@ -1,5 +1,5 @@
 
-.form-container{
+.form-container.main-form-demo{
     display: flex;
     align-items: flex-end;
   }
