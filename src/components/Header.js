@@ -24,7 +24,7 @@ const Header=(props)=>{
           <Nav.Link  className="nav-link" href="#services" >Services</Nav.Link>
         </Nav>
       </Container>
-    </Navbar><div><Services/></div></>
+    </Navbar></>
     )
     
 }

@@ -51,11 +51,11 @@ const RequestDemoForm=()=> {
     return false;
   }
   return (
-    <div className="form-container main-form-demo mt-5" id="request-demo">
+    <div className="form-container main-form-demo mt-0" id="request-demo">
     <ToastContainer />
-    <form className="float-right" onSubmit={sendDemoRequest} method="POST">
+    <form className="float-right" onSubmit={sendDemoRequest} method="POST" autocomplete="off">
     <h3 className="submit-form">Request Form</h3>
-    <MDBInput wrapperClass='mb-4' type='email' id='form6Example5' label='Email' onChange={onChangeData} 
+    <MDBInput wrapperClass='mb-4' id='form6Example5' type="email" label='Email' onChange={onChangeData} 
        value={data.email}
      className={data.email !== ""?"filled-input": ""} name="email"/>
       <MDBRow className='mb-4'>
