@@ -1,6 +1,6 @@
 {
-  "homepage": "https://VANAJASANGATI.github.io/new-website",
-  "name": "new-website",
+  "homepage": "https://VANAJASANGATI.github.io/",
+  "name":"new-website",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:8084",
