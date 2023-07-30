@@ -18,7 +18,7 @@ description: "Tech Mahindra’s comprehensive value-chain advanced security outs
 
 
 const Services1=()=>{
-    return(<div > hi
+    return(<div >
         <ul className="services-container">{servicesList.map(eachService=><li  key={eachService.id}><ServiceItem key={eachService.id}
          serviceDetails={eachService}> 
         </ServiceItem></li>
