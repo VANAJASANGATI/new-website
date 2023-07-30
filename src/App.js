@@ -3,7 +3,7 @@
 import Home from './components/Home';
 import Services from './components/Services';
 import NavHeader from './components/NavHeader';
-import Accordions  from './components/Accordians';
+//import Accordions  from './components/Accordians';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RequestDemoForm from "./components/RequestDemoForm";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
