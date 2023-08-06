@@ -1,6 +1,6 @@
 
 // import Header from './components/Header';
-import Home from './components/Home';
+import Home from './pages/home/Home';
 import Services from './components/Services';
 import NavHeader from './components/NavHeader';
 //import Accordions  from './components/Accordians';
