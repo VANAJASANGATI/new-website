@@ -22,11 +22,11 @@
   .messgae-container {
     height: 75px;
   }
-  .form-request-demo-btn{
+  /* .form-request-demo-btn{
     font-weight:500 ;
     font-size: 20px;
     border-radius: 15px;
-    width: 100%;
+    width: 100%; */
 
 .form-container{
   display: flex;

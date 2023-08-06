@@ -1,107 +1,103 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+}
 
-.nav-container{
-    display: flex;
-    align-items: center;
-    
-  }
-  
-  .request-demo-btn{
-    height: 39px;
-    text-align: center;
-    color:white;
-    border-radius: 25px;
-    width:150px;
-    padding: 3px;
-    border: 2px solid white;
-    background-color: rgba(0, 0, 0, 0.808);
-  }
-  .request-demo-btn:hover{
-    border: 3px solid white;
-  }
-  
-  .careers-nav-link{
-    margin-right: 20px;
-  }
-  
-  .logo {
-    width:200px;
-    height:40px;  
-  }
- 
-  .nav-list {
-    list-style-type: none;
-    margin-bottom: 0px;
-  }
+.request-demo-btn {
+  height: 39px;
+  text-align: center;
+  color: white;
+  border-radius: 25px;
+  width: 150px;
+  padding: 3px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.808);
+}
+.request-demo-btn:hover {
+  border: 3px solid white;
+}
 
-  .nav-list .nav-item {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        position: relative;
-  }
-  .nav-item .sub-items-container {
-    position: absolute;
-    top: 50px;
-    z-index: 20;
-    color: black;
-    visibility: hidden;
+.careers-nav-link {
+  margin-right: 20px;
+}
 
-  }
-  .nav-item a:hover ~ .sub-items-container , .sub-items-container:hover {
-    visibility: visible;
-  }
-  .nav-list .nav-item  a {
-    text-decoration: none;
-  }
-  .nav-list .nav-item  a ~ .item-underline{
-    height: 1px;
-    background: white;
-    width: 30px;
-    opacity: 0;
-    display: block;
-    margin: 0 auto;
-    margin-top: 4px;
-  }
-  .nav-list .nav-item  a:hover  ~ .item-underline{
-    opacity: 1;
-  }
+.logo {
+  width: 200px;
+  height: 40px;
+}
 
-@media only screen and (min-width:769px) {
+.nav-list {
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+
+.nav-list .nav-item {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.nav-item .sub-items-container {
+  position: absolute;
+  top: 50px;
+  z-index: 20;
+  color: black;
+  visibility: hidden;
+}
+.nav-item a:hover ~ .sub-items-container,
+.sub-items-container:hover {
+  visibility: visible;
+}
+.nav-list .nav-item a {
+  text-decoration: none;
+}
+.nav-list .nav-item a ~ .item-underline {
+  height: 1px;
+  background: white;
+  width: 30px;
+  opacity: 0;
+  display: block;
+  margin: 0 auto;
+  margin-top: 4px;
+}
+.nav-list .nav-item a:hover ~ .item-underline {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 769px) {
   .nav-list {
     width: 80%;
     margin-top: 10px;
   }
 }
-input#app-toggle[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
+input#app-toggle[type='checkbox'] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
 }
-input#app-toggle+label {
- cursor: pointer;
- padding: 0px;
- padding-left: 4px;
- padding-right: 4px;
- border: black 2px solid;
- border-radius: 20px;
- position: relative;
- color: black;
- background-color: white ! important;
+input#app-toggle + label {
+  cursor: pointer;
+  padding: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: black 2px solid;
+  border-radius: 20px;
+  position: relative;
+  color: black;
+  background-color: white !important;
 }
-input#app-toggle+label span {
+input#app-toggle + label span {
   display: inline-block;
   height: 30px;
   width: 90px;
-  text-align: center;  
+  text-align: center;
 }
-input#app-toggle:not(:checked)+label span:first-child {
-
- padding: 8px;
- border-radius: 12px;
-
+input#app-toggle:not(:checked) + label span:first-child {
+  padding: 8px;
+  border-radius: 12px;
 }
-input#app-toggle+label::after {
-  content: "";
+input#app-toggle + label::after {
+  content: '';
   display: block;
   height: 30px;
   width: 90px;
@@ -110,24 +106,23 @@ input#app-toggle+label::after {
   top: 4px;
   z-index: -2;
   border-radius: 12px;
-  background: black ! important;padding: 2px;
+  background: black !important;
+  padding: 2px;
 }
-input#app-toggle:not(:checked)+label::after {
-    left: 6px;
-   transition: 0.3s;
-   
+input#app-toggle:not(:checked) + label::after {
+  left: 6px;
+  transition: 0.3s;
 }
-input#app-toggle:checked+label::after {
+input#app-toggle:checked + label::after {
   translate: 80px;
-   transition: 0.3s;
-   
+  transition: 0.3s;
 }
-input#app-toggle:not(:checked)+label span:first-child {
- color: white!important;
+input#app-toggle:not(:checked) + label span:first-child {
+  color: white !important;
 }
 
-input#app-toggle:checked+label span:last-child {
- color: white;
- padding: 8px;
- border-radius: 12px;
+input#app-toggle:checked + label span:last-child {
+  color: white;
+  padding: 8px;
+  border-radius: 12px;
 }
